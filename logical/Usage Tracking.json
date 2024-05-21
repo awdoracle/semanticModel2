@@ -1,0 +1,7 @@
+{
+  "businessModel" : {
+    "name" : "Usage Tracking",
+    "tags" : [ "Project:Samp Relational" ],
+    "disable" : false
+  }
+}

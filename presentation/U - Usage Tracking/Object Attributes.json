@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "Object Attributes",
+    "alternateNames" : [ "All Common Attributes", "All Generic Attributes", "Analysis Attributes#1" ],
+    "presentationColumns" : [ {
+      "name" : "Description",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Description"
+    }, {
+      "name" : "Folder",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Folder"
+    }, {
+      "name" : "Object Name",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Object Name"
+    }, {
+      "name" : "Owner",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Owner"
+    }, {
+      "name" : "Object Type",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Object Type"
+    }, {
+      "name" : "Signature",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Signature"
+    }, {
+      "name" : "Created Time",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Created Time"
+    }, {
+      "name" : "Last Modified Time",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Last Modified Time"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Object Type Hier",
+      "sourceLogicalTable" : "logicalTable:Usage Tracking.WS Objects Attributes",
+      "alternateNames" : [ "WS All Objects Dim" ],
+      "levels" : [ {
+        "name" : "Object Type",
+        "sourceLogicalLevel" : "logicalLevel:Usage Tracking.WS Objects Attributes.Object Type",
+        "displayColumn" : "presentationColumn:U - Usage Tracking.Object Attributes.Object Type"
+      }, {
+        "name" : "Signature",
+        "sourceLogicalLevel" : "logicalLevel:Usage Tracking.WS Objects Attributes.Signature",
+        "displayColumn" : "presentationColumn:U - Usage Tracking.Object Attributes.Signature"
+      } ]
+    } ]
+  }
+}

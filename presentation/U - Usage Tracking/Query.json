@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Query",
+    "description" : "nQuire Topics include: Subject Areas and Logical SQL",
+    "alternateNames" : [ "Topic" ],
+    "presentationColumns" : [ {
+      "name" : "Repository Name",
+      "description" : "Actual Name that is loaded and available on the nQuire Server in the Config File.",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Repository Name",
+      "localization" : {
+        "localizationKey" : "Repository Name",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Usage_Tracking_Topic_Repository_Name)"
+      }
+    }, {
+      "name" : "Subject Area Name",
+      "description" : "Available option in the presentation layer within nQuire metadata.",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Subject Area Name",
+      "localization" : {
+        "localizationKey" : "Subject Area Name",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Usage_Tracking_Topic_Subject_Area_Name)"
+      }
+    }, {
+      "name" : "UT Row Id",
+      "description" : "Actual Logial SQL passed to the nQuire Server for a request.",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.UT Row Id",
+      "localization" : {
+        "localizationKey" : "UT Row Id",
+        "nameVariable" : "VALUEOF(NQ_SESSION.CN_Usage_Tracking_Topic_Logical_SQL)"
+      }
+    }, {
+      "name" : "Node ID",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Node ID"
+    }, {
+      "name" : "Query Type",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Query Type"
+    }, {
+      "name" : "Cache Hit Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Cache Hit Indicator"
+    }, {
+      "name" : "Webcat Path",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Webcat Path"
+    }, {
+      "name" : "Dashboard",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Dashboard"
+    }, {
+      "name" : "Dashboard Page",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Dashboard Page"
+    }, {
+      "name" : "Presentation Catalog",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Presentation Catalog"
+    }, {
+      "name" : "Logical Query Key",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Logical Query Key",
+      "alternateNames" : [ "Query Key" ]
+    }, {
+      "name" : "Logical Query Blob",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Logical Query Blob",
+      "alternateNames" : [ "Query Blob" ]
+    }, {
+      "name" : "Succes Flag",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Succes Flag"
+    }, {
+      "name" : "Logical SQL",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Logical SQL",
+      "alternateNames" : [ "Logical SQL#1" ]
+    }, {
+      "name" : "Error Text",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT L Query.Error Text"
+    } ],
+    "localization" : {
+      "localizationKey" : "Query",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_Usage_Tracking_Topic)"
+    }
+  }
+}

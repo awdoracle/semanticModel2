@@ -1,0 +1,23 @@
+{
+  "presentationTable" : {
+    "name" : "Filters",
+    "alternateNames" : [ "Filters Attributes" ],
+    "presentationColumns" : [ {
+      "name" : "Filter Name",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Filter Name"
+    }, {
+      "name" : "Filter Table",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Filter Table"
+    }, {
+      "name" : "Filter Column",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Filter Column"
+    }, {
+      "name" : "Filter Path",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Filter Path"
+    }, {
+      "name" : "Filter Subject Area",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Filter Subject Area",
+      "alternateNames" : [ "Subject Area" ]
+    } ]
+  }
+}

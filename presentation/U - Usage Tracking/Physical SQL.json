@@ -1,0 +1,25 @@
+{
+  "presentationTable" : {
+    "name" : "Physical SQL",
+    "alternateNames" : [ "Navigation#1" ],
+    "presentationColumns" : [ {
+      "name" : "Physical Sources",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Physical Sources"
+    }, {
+      "name" : "Physical SQL",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Physical SQL"
+    }, {
+      "name" : "Phys Sql Sequence Id",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Phys Sql Sequence Id"
+    }, {
+      "name" : "Logical Query Id",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Logical Query Id"
+    }, {
+      "name" : "Physical SQL Blob",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Physical SQL Blob"
+    }, {
+      "name" : "Row Count",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.UT Phys SQL.Row Count"
+    } ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "physicalTable": {
+    "name": "WS_ALLOBJECTS_Dim",
+    "sourceTable": "physicalTable:System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS",
+    "joins": [      {
+        "rightTable": "physicalTable:System DB (ORCL).Catalog.dbo.WS_ANALYSIS",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS_Dim.PATH",
+            "rightColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_ANALYSIS.PATH"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:System DB (ORCL).Catalog.dbo.WS_DASHBOARD",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS_Dim.PATH",
+            "rightColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_DASHBOARD.DASHBOARDPAGEPATH"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:System DB (ORCL).Catalog.dbo.WS_DBPROMPT",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS_Dim.PATH",
+            "rightColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_DBPROMPT.PATH"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:System DB (ORCL).Catalog.dbo.WS_FILTER",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS_Dim.PATH",
+            "rightColumn": "physicalColumn:System DB (ORCL).Catalog.dbo.WS_FILTER.PATH"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "PATH"
+      ]
+    ]
+  }
+}

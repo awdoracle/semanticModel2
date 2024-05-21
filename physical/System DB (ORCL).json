@@ -1,0 +1,124 @@
+{
+  "database" : {
+    "name" : "System DB (ORCL)",
+    "databaseType" : "ORACLE_DATABASE",
+    "connectionPools" : [ {
+      "name" : "UT Connection Pool",
+      "description" : "Connection pool for Sample Usage Tracking db source. This connection is the same as the Sample relational source, as the UT tables are stored in the same sample db schema.\r\n\r\nInstead of editing connectivity parameters in each connection pool, update the RPD and Session variables that hold that information (Manage > Variables)",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeoutUnit" : "NEVER",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 0
+      }
+    }, {
+      "name" : "BSC",
+      "description" : "Connection pool for Scorecards Annotations. This connection is the same as the Sample relational source, as the annotations tables are stored in the same sample db schema.\r\n\r\nInstead of editing connectivity parameters in each connection pool, update the RPD and Session variables that hold that information (Manage > Variables)",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    }, {
+      "name" : "SampleApp Init Blocks",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeoutUnit" : "NEVER",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "featureOverrides" : [ {
+      "name" : "LENGTH_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "RAND_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "REPEAT_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "PERF_PREFER_NO_COMMON_QUERY_FACTORING",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_AREA_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_AS_TEXT_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_DISTANCE_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_LENGTH_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_WITHIN_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "GEOMETRY_WITHIN_DISTANCE_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "FRACTIONAL_SECOND_PRECISION",
+      "value" : 0
+    }, {
+      "name" : "MAX_BULK_FETCH_BUFFER_SIZE",
+      "value" : 327680
+    }, {
+      "name" : "DEFAULT_BULK_FETCH_ROW_COUNT",
+      "value" : 100
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false,
+    "queryLimits" : [ {
+      "accessor" : "role:BIAdministrator",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 10,
+      "directDatabaseRequests" : "ALLOW"
+    }, {
+      "accessor" : "role:BIAuthor",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 10,
+      "directDatabaseRequests" : "ALLOW"
+    }, {
+      "accessor" : "role:BIConsumer",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 10,
+      "directDatabaseRequests" : "ALLOW"
+    }, {
+      "accessor" : "role:BISystem",
+      "maxRowSetting" : "INHERIT",
+      "maxRows" : 100000,
+      "maxTimeSetting" : "INHERIT",
+      "maxTime" : 10,
+      "directDatabaseRequests" : "ALLOW"
+    } ]
+  }
+}

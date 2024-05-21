@@ -1,0 +1,27 @@
+{
+  "presentationTable" : {
+    "name" : "Analysis",
+    "alternateNames" : [ "Analysis Attributes" ],
+    "presentationColumns" : [ {
+      "name" : "Analysis Name",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis Name"
+    }, {
+      "name" : "Analysis Subject Area",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis Subject Area",
+      "alternateNames" : [ "Subject Area" ]
+    }, {
+      "name" : "Analysis Table",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis Table"
+    }, {
+      "name" : "Analysis Column",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis Column"
+    }, {
+      "name" : "Analysis Path",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis Path"
+    }, {
+      "name" : "Analysis URL",
+      "sourceLogicalColumn" : "logicalColumn:Usage Tracking.WS Objects Attributes.Analysis URL",
+      "alternateNames" : [ "Analysis Link" ]
+    } ]
+  }
+}
